@@ -38,4 +38,4 @@ for root,_,files in os.walk(paths):
             else:
                 false+=1
 
-        print("acc =", (true/(true+false))*100,"%")
+        print("Accuracy =", (true/(true+false))*100,"%")
