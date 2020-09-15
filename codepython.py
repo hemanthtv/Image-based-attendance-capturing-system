@@ -6,7 +6,6 @@ import cv2
 Known_encoding_values = []
 encodings_tobe_Check = []
 matchinglist = []
-i = 0
 paths=r'C:\Users\Hemanth\Desktop\trainset\trainset'
 for root,_,files in os.walk(paths):
     true=0
@@ -30,8 +29,7 @@ for root,_,files in os.walk(paths):
     if matchinglist == []:
         continue
     else:      
-        i+=1
-        print(matchinglist,i)
+        print(matchinglist)
         for qwery in matchinglist:
             if qwery==True:
                 true+=1
